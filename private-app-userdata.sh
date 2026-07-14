@@ -54,7 +54,7 @@ AZ=$(curl -s -H "X-aws-ec2-metadata-token: $TOKEN" \
 INSTANCE_TYPE=$(curl -s -H "X-aws-ec2-metadata-token: $TOKEN" \
   http://169.254.169.254/latest/meta-data/instance-type)
 
-LAUNCH_TIME=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+LAUNCH_TIME = $(date -u +"%Y-%m-%d %H:%M:%S UTC")
 
 # ----------------------------
 # Create the Application HTML Page
