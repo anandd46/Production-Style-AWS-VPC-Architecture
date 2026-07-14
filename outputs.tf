@@ -11,6 +11,7 @@
 # ----------------------------
 
 output "vpc_id" {
+
   description = "The ID of the production VPC"
   value       = aws_vpc.main.id
 }
