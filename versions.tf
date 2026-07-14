@@ -19,7 +19,7 @@ terraform {
   # Uncomment and configure this block to use S3 as a remote backend
   # (recommended for team environments and production workloads).
   #
-  # backend "s3" {
+  # backend "s3"  {
   #   bucket         = "my-terraform-state-bucket"
   #   key            = "prod-vpc/terraform.tfstate"
   #   region         = "us-east-1"
