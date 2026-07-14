@@ -13,7 +13,7 @@ provider "aws" {
   # This ensures consistent tagging across the entire stack without
   # having to repeat tags on every individual resource block.
   default_tags {
-    tags = {
+    tags =  {
       Project     = "production-aws-vpc"
       Environment = var.environment
       ManagedBy   = "Terraform"
