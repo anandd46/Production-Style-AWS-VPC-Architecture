@@ -80,13 +80,13 @@ variable "availability_zone_b" {
 # ----------------------------
 
 variable "my_ip" {
-  description = "Your public IP address in CIDR notation (e.g., 203.0.113.42/32). Used to restrict SSH access to the bastion host. Find your IP at https://checkip.amazonaws.com"
+  description = "Your public IP address in CIDR notation(e.g., 203.0.113.42/32). Used to restrict SSH access to the bastion host. Find your IP at https://checkip.amazonaws.com"
   type        = string
   sensitive   = true
 
   validation {
     condition     = can(cidrnetmask(var.my_ip))
-    error_message = "my_ip must be a valid CIDR block, e.g., 203.0.113.42/32"
+    error_message = "my_ip must be a valid CIDR block,e.g., 203.0.113.42/32"
   }
 }
 
