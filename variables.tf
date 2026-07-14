@@ -84,7 +84,7 @@ variable "my_ip" {
   type        = string
   sensitive   = true
 
-  validation {
+  validation  {
     condition     = can(cidrnetmask(var.my_ip))
     error_message = "my_ip must be a valid CIDR block,e.g., 203.0.113.42/32"
   }
