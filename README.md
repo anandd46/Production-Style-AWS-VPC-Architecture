@@ -792,16 +792,6 @@ These are natural next steps to extend this architecture:
 9. **Remote Terraform State** — Use an S3 backend with DynamoDB locking instead of local state
 10. **Terraform Modules** — Refactor into reusable modules (vpc, compute, alb) for multi-environment deployments
 
----
 
-## Resume Description
-
-> **Production-Style AWS VPC Architecture** | Terraform | AWS Networking
->
-> Designed and deployed a multi-AZ AWS VPC environment following production networking best practices using Terraform IaC. Architecture includes public/private subnet segmentation across two Availability Zones, Internet Gateway and NAT Gateway for controlled traffic flow, an Application Load Balancer for HTTP traffic distribution, and a bastion host pattern for secure SSH access to private EC2 instances. Implemented defense-in-depth security using both Security Groups (stateful, instance-level) and Network ACLs (stateless, subnet-level). All infrastructure defined as code with parameterized variables, proper resource tagging, and documented deployment procedures.
->
-> **Technologies:** AWS VPC, EC2, ALB, NAT Gateway, Terraform, Amazon Linux 2023, Apache HTTP Server
-
----
 
 *Built as a hands-on cloud networking study project — every design decision here reflects patterns used in real AWS production environments.*
