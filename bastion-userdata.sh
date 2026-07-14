@@ -9,6 +9,7 @@
 # Execution log: /var/log/cloud-init-output.log
 # ============================================================
 
+
 set -euxo pipefail
 
 # ----------------------------
