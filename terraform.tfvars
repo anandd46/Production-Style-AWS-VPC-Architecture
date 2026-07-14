@@ -43,7 +43,7 @@ my_ip = "0.0.0.0/0" # ⚠️ Replace with your IP, e.g., "203.0.113.42/32"
 key_pair_name = "prod-vpc-key" # ⚠️ Must exist in your AWS account
 
 bastion_instance_type = "t3.micro"
-app_instance_type     = "t3.micro"
+ app_instance_type    = "t3.micro"
 
 # Amazon Linux 2023 — us-east-1
 # Run this to get the latest AMI ID for your region:
